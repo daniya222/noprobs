@@ -1,0 +1,159 @@
+/* Chesna Grotesk Black */
+@font-face {
+  font-family: 'ChesnaGroteskBlack';
+  src: url('Fontspring-DEMO-chesnagrotesk-black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Chesna Grotesk Black Italic */
+@font-face {
+  font-family: 'ChesnaGroteskBlackItalic';
+  src: url('Fontspring-DEMO-chesnagrotesk-blackitalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Chesna Grotesk Bold */
+@font-face {
+  font-family: 'ChesnaGroteskBold';
+  src: url('Fontspring-DEMO-chesnagrotesk-bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Chesna Grotesk Bold Italic */
+@font-face {
+  font-family: 'ChesnaGroteskBoldItalic';
+  src: url('Fontspring-DEMO-chesnagrotesk-bolditalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Chesna Grotesk Book */
+@font-face {
+  font-family: 'ChesnaGroteskBook';
+  src: url('Fontspring-DEMO-chesnagrotesk-book.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Chesna Grotesk Book Italic */
+@font-face {
+  font-family: 'ChesnaGroteskBookItalic';
+  src: url('Fontspring-DEMO-chesnagrotesk-bookitalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Chesna Grotesk ExtraLightItalic */
+@font-face {
+  font-family: 'ChesnaGroteskExtraLightItalic';
+  src: url('Fontspring-DEMO-chesnagrotesk-extltita.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Chesna Grotesk ExtraBold */
+@font-face {
+  font-family: 'ChesnaGroteskExtraBold';
+  src: url('Fontspring-DEMO-chesnagrotesk-extrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Chesna Grotesk ExtraBold Italic */
+@font-face {
+  font-family: 'ChesnaGroteskExtraBoldItalic';
+  src: url('Fontspring-DEMO-chesnagrotesk-extrabolditalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Chesna Grotesk ExtraLight */
+@font-face {
+  font-family: 'ChesnaGroteskExtraLight';
+  src: url('Fontspring-DEMO-chesnagrotesk-extralight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Chesna Grotesk Light */
+@font-face {
+  font-family: 'ChesnaGroteskLight';
+  src: url('Fontspring-DEMO-chesnagrotesk-light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Chesna Grotesk Light Italic */
+@font-face {
+  font-family: 'ChesnaGroteskLightItalic';
+  src: url('Fontspring-DEMO-chesnagrotesk-lightitalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Chesna Grotesk Medium */
+@font-face {
+  font-family: 'ChesnaGroteskMedium';
+  src: url('Fontspring-DEMO-chesnagrotesk-medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Chesna Grotesk Medium Italic */
+@font-face {
+  font-family: 'ChesnaGroteskMediumItalic';
+  src: url('Fontspring-DEMO-chesnagrotesk-mediumitalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Chesna Grotesk Regular */
+@font-face {
+  font-family: 'ChesnaGroteskRegular';
+  src: url('Fontspring-DEMO-chesnagrotesk-regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Chesna Grotesk Regular Italic */
+@font-face {
+  font-family: 'ChesnaGroteskRegularItalic';
+  src: url('Fontspring-DEMO-chesnagrotesk-regularitalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Chesna Grotesk SemiBold */
+@font-face {
+  font-family: 'ChesnaGroteskSemiBold';
+  src: url('Fontspring-DEMO-chesnagrotesk-semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Chesna Grotesk SemiBold Italic */
+@font-face {
+  font-family: 'ChesnaGroteskSemiBoldItalic';
+  src: url('Fontspring-DEMO-chesnagrotesk-semibolditalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Chesna Grotesk Thin */
+@font-face {
+  font-family: 'ChesnaGroteskThin';
+  src: url('Fontspring-DEMO-chesnagrotesk-thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Chesna Grotesk Thin Italic */
+@font-face {
+  font-family: 'ChesnaGroteskThinItalic';
+  src: url('Fontspring-DEMO-chesnagrotesk-thinitalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}

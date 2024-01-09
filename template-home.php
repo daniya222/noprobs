@@ -191,8 +191,76 @@ $fourth = get_field('fourth_section');
   </div>
 
 </section>
-<section class="fifth-section">
-  <img src="<?php echo get_template_directory_uri(); ?>/inc/img/or.png">
+<?php
+$fifth = get_field('fifth_section');
+ ?>
+<section class="fifth-section position-relative">
+  <img src="<?php echo get_template_directory_uri(); ?>/inc/img/or.png" class="or">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-md-6">
+        <div class="fifth-subtext" data-aos="fade-right">
+          <?php echo $fifth['subtext']?>
+        </div>
+        <div class="fifth-title" data-aos="fade-right">
+          <?php echo $fifth['title']?>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="text-fifth" data-aos="fade-left">
+          <?php echo $fifth['content']?>
+        </div>
+        <div class="button-holder padding-top-30" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <?php if( have_rows('button') ):
+
+                
+                  while ( have_rows('button') ) : the_row();
+                  $url = get_sub_field('button_url');
+                  $class = get_sub_field('button_class');
+                  $text = get_sub_field('button_text');
+
+                   generate_button($url, $class, $text)
+                ?> 
+            
+                <?php  
+                endwhile;
+                endif;?>
+
+                </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+</section>
+
+<?php
+$sixth= get_field('sixth_section');
+ ?>
+<section class="sixth-section position-relative">
+  <img src="<?php echo get_template_directory_uri(); ?>/inc/img/or2.png" class="or2">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-md-6">
+        <div class="sixth-subtext" data-aos="fade-right">
+          <?php echo $sixth['subtext']?>
+        </div>
+        <div class="sixth-title" data-aos="fade-right">
+          <?php echo $sixth['title']?>
+        </div>
+        <div class="fourth-text" data-aos="fade-right">
+          <?php echo $sixth['content']?>
+        </div>
+      </div>
+      <div class="col-md-6">
+       
+
+      
+    </div>
+
+  </div>
 
 
 </section>

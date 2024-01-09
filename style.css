@@ -1,3 +1,13 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+:root {
+	--white: #ffffff; 
+	--lime:#E0FB60;
+	--mirage:#161D25;
+	--egg-shell:#ECECE0;
+	--blue:#1675ED;
+}
 .banner-holder {
     position: absolute;
     left: 0;
@@ -34,8 +44,110 @@
     position: relative;
 }
 .banner-continer-holder {
-    min-height: 100vh;
+	 
+    height: 840px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+		z-index: 2;
+		padding-bottom: 3.2rem;
+}
+.banner-text h1{
+		
+		font-weight: bold;
+    font-size: 4.5rem;
+    color: var(--white);
+    line-height: 7.2rem;
+
+}
+.ornament{
+	position: absolute;
+	width: 500px;
+	bottom: 0;
+}
+.ornament img{
+	width: 100%;
+}
+.google-award{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 120px;
+	margin-left:4.5rem
+}
+.google-award *{
+	color:var(--white);
+	font-size: 13px;
+  font-weight: 400;
+}
+.google-award .number{
+
+	font-size: 22px;
+  font-weight: 800;
+
+	
+}
+.col-left{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.btn-primary,.btn-secondary{
+	text-transform: uppercase;
+	padding:24.5px 67.5px;
+	border:0;
+	font-weight:600
+
+}
+.btn-primary svg,.btn-secondary svg{
+	margin-right:10px
+}
+.btn-primary{
+	background-color: var(--lime);
+	color:var(--mirage);
+}
+.btn-secondary{
+	background-color: var(--blue);
+	color:var(--egg-shell);
+}
+.btn-secondary path{
+	stroke:var(--egg-shell);
+}
+.margin-bottom-9-3{
+	  margin-bottom: 9.3rem;
+}
+.margin-bottom-3{
+	  margin-bottom: 3rem;
+}
+.button-holder > a:first-child{
+	margin-right: 10px;
+}
+.col-banner-right{
+	  display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 5rem;
+}
+.banner-text table li{
+	  font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+		margin-bottom: 1rem;
+}
+.banner-text table ul{
+	list-style-type: none;
+	padding: 0;
+  padding-left: 10px 
+}
+.banner-text table li {
+  
+  background: url('inc/img/check.png') no-repeat left top; 
+	background-size: 24px 24px;
+  padding-left: 34px;
+}
+@media (min-width: 1200px){
+	section .container{
+		  max-width: 1310px;
+	}
 }

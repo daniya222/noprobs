@@ -52,6 +52,15 @@ body {
 		z-index: 2;
 		padding-bottom: 3.2rem;
 }
+.third-continer-holder {
+	 
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+		z-index: 2;
+		padding-bottom: 3.2rem;
+}
 .banner-text h1{
 		
 		font-weight: bold;
@@ -95,7 +104,7 @@ body {
 }
 .btn-primary,.btn-secondary{
 	text-transform: uppercase;
-	padding:24.5px 67.5px;
+	padding: 20.5px 54.5px;
 	border:0;
 	font-weight:600
 
@@ -145,6 +154,106 @@ body {
   background: url('inc/img/check.png') no-repeat left top; 
 	background-size: 24px 24px;
   padding-left: 34px;
+}
+.second-section,.third-section,.fourth-section{
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+}
+video{
+	  max-width: 710px;
+    height: 460px;
+}
+.col-right-second{
+	right: 0px;
+}
+.subtext-second{
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 26px;
+	letter-spacing: 0.06em;
+	text-align: left;
+	color:var(--blue);
+
+}
+.title-second{
+	padding-top:20px;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 67px;
+	letter-spacing: 0em;
+	text-align: left;
+	color:var(--mirage);
+
+}
+.second-content{
+	padding-top:20px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 29px;
+	letter-spacing: 0em;
+	text-align: left;
+	color:var(--mirage);
+
+}
+.padding-right-2{
+	padding-right: 2rem;
+}
+.padding-top-30{
+		padding-top:30px;
+}
+.third-section-text{
+	
+	font-size: 1rem;
+	font-weight: 450;
+	line-height: 26px;
+	letter-spacing: 0em;
+	text-align: left;
+	color:var(--white)
+
+}
+.third-title{
+
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 67px;
+	letter-spacing: 0em;
+	text-align: left;
+	color:var(--white)
+
+}
+.third-logo{
+	  position: absolute;
+    top: -160px;
+}
+.padding-bottom-62{
+	padding-bottom: 62px;
+}
+.fourth-title{
+	
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 67px;
+	letter-spacing: 0em;
+	text-align: left;
+	color:var(--mirage)
+
+}
+.fourth-text{
+
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 29px;
+	letter-spacing: 0em;
+	text-align: left;
+
+}
+.padding-bottom-69{
+	padding-bottom: 69px;
+}
+.fifth-section{
+	background-color: var(--blue);
+	padding-top:7.5rem;
+	padding-bottom: 7.5rem;
 }
 @media (min-width: 1200px){
 	section .container{

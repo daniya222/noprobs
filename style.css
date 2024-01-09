@@ -321,6 +321,78 @@ video{
 	text-align: left;
 
 }
+.menu{
+	margin-bottom: 0rem;
+}
+.site-header{
+	  position: absolute;
+    top: 0;
+    z-index: 3;
+    color: var(--white);
+		width: 100%;
+}
+.menu{
+	display: flex;
+  width: 100%;
+  justify-content: space-between;
+	padding: 0;
+}
+.menu li{
+	list-style: none;
+}
+.menu li a{
+	color: var(--white);
+  text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+	letter-spacing: 0em;
+	text-align: left;
+
+
+
+}
+.section-menu{
+	  padding-top: 19px;
+    padding-bottom: 19px;
+    border-top: 1px solid #FFFFFF3D;
+    border-bottom: 1px solid #FFFFFF3D;
+
+}
+.logo-section{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.logo-section img{
+	width: 182px;
+}
+.call-us span,.email-us span{
+	
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 17px;
+	letter-spacing: 0.06em;
+	text-align: left;
+
+
+}
+.call-us{
+	margin-right: 131px;
+}
+.call-us p,.email-us p{
+	margin-bottom:0
+}
+.call-us p a,.email-us p a{
+  color:var(--white);
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+	letter-spacing: 0em;
+	text-align: left;
+	margin-bottom: 0rem;
+	text-decoration: none;
+
+}
 @media (min-width: 1200px){
 	section .container{
 		  max-width: 1310px;

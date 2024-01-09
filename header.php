@@ -31,8 +31,48 @@
 
 
 	<header id="masthead" class="site-header">
-		
+	<section class="logo-section">
+		<div class="container container-logo">
+			<div class="row justify-content-between">
+				<div class="col-md-4">
+					<img src="<?php echo get_field('logo', 'option')['url']?>" class="">
+				
+				</div>
+				<div class="col-md-6 d-flex justify-content-end">
+					<div class="call-us">
+						<span>CALL US:</span>
+						<p><a href="tel:<?php the_field('phone','option') ?>"><?php the_field('phone','option') ?></a></p>
 
+					</div>
+					<div class="email-us">
+						<span>EMAIL US</span>
+						<p><a href="mailto:<?php the_field('email','option') ?>"><?php the_field('email','option') ?></a></p>
+
+					</div>
+				
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="section-menu">
+		
+		<div class="container container-menu">
+			<div class="row">
+				<div class="col-md-12">
+					<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'menu-1',
+								'menu_id'        => 'services',
+							)
+						);
+						?>
+				</div>
+			</div>
+
+		</div>
+	</section>
 		<!--<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'no-probs' ); ?></button>
 			<?php

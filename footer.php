@@ -12,19 +12,71 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'no-probs' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'no-probs' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'no-probs' ), 'no-probs', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
+		<section class="section-footer-menu">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-md-3">
+						<div class="logo-footer">
+							<img height="42" src="<?php echo get_field('logo', 'option')['url']?>" class="">
+						
+						</div>
+						<div class="text-footer">
+							<?php echo get_field('text_footer', 'option')?>
+						</div>
+						<div class="d-flex align-items-center">
+							<div style="margin-right:10px">
+								<a href=""><img width="60" src="<?php echo get_template_directory_uri(); ?>/inc/img/fb.png" class="fb"></a>
+							</div>
+							<div style="">
+								<a href=""><img height="55" src="<?php echo get_template_directory_uri(); ?>/inc/img/google2.png" class="google"></a>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-md-6">
+						<div class="row service-row">
+							<div class="col-md-6">
+								<span style="font-weight:600">Services</span>
+								<?php
+								wp_nav_menu(
+									array(
+										'theme_location' => 'menu-1',
+										'menu_id'        => 'services',
+									)
+								);
+								?>
+
+							</div>
+							<div class="col-md-6">
+								<span style="font-weight:600">Contact</span>
+								<ul class="menu">
+									<li><a href="tel:<?php the_field('phone','option') ?>"><?php the_field('phone','option') ?></a></li>
+									<li><a href="mailto:<?php the_field('email','option') ?>" style="color:#8CC3E1;"><?php the_field('email','option') ?></li>
+									<li><?php the_field('location','option') ?></li>
+									<li><?php the_field('operartional_time','option') ?></li>
+									<li style="margin-top:45px"><a href="/privacy-policy">Privacy Policy</li>
+								</ul>
+
+							</div>
+						</div>
+					
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container copy-container">
+				<div class="row">
+					<div class="col-md-12">
+						<?php echo the_field('copyrights','option')?>
+
+					</div>
+
+				</div>
+
+			</div>
+		</section>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

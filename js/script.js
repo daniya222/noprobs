@@ -1,6 +1,6 @@
 
 AOS.init();
-$('header .menu').hide();
+$('.mobile-menu-section .menu').hide();
 $('.icon').click(function() {
-  $('header .menu').slideToggle("fast");
+  $('.mobile-menu-section .menu').slideToggle("fast");
 })

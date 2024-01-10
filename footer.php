@@ -35,7 +35,7 @@
 					</div>
 					<div class="col-md-6" data-aos="fade-left">
 						<div class="row service-row">
-							<div class="col-md-6">
+							<div class="col-md-6 mtm-30">
 								<span style="font-weight:600">Services</span>
 								<?php
 								wp_nav_menu(
@@ -47,14 +47,14 @@
 								?>
 
 							</div>
-							<div class="col-md-6">
+							<div class="col-md-6 mtm-30">
 								<span style="font-weight:600">Contact</span>
 								<ul class="menu">
 									<li><a href="tel:<?php the_field('phone','option') ?>"><?php the_field('phone','option') ?></a></li>
 									<li><a href="mailto:<?php the_field('email','option') ?>" style="color:#8CC3E1;"><?php the_field('email','option') ?></li>
 									<li><?php the_field('location','option') ?></li>
 									<li><?php the_field('operartional_time','option') ?></li>
-									<li style="margin-top:45px"><a href="/privacy-policy">Privacy Policy</li>
+									<li class="mtm-0" style="margin-top:45px"><a href="/privacy-policy">Privacy Policy</li>
 								</ul>
 
 							</div>

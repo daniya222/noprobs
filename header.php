@@ -35,10 +35,10 @@
 		<div class="container container-logo">
 			<div class="row justify-content-between">
 				<div class="col-md-4">
-					<img src="<?php echo get_field('logo', 'option')['url']?>" class="">
+					<a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_field('logo', 'option')['url']?>" class=""></a>
 				
 				</div>
-				<div class="col-md-6 d-flex justify-content-end">
+				<div class="col-md-6 d-flex justify-content-end col-call-us">
 					<div class="call-us">
 						<span>CALL US:</span>
 						<p><a href="tel:<?php the_field('phone','option') ?>"><?php the_field('phone','option') ?></a></p>
@@ -73,15 +73,32 @@
 
 		</div>
 	</section>
-		<!--<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'no-probs' ); ?></button>
+	<section class="mobile-menu-section">
+		<div class="mobile-menu-container">
+			<div>
+					<a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_field('logo', 'option')['url']?>" class=""></a>
+			</div>
+			<div class="icon">
+				<div class="hamburger"></div>
+				<div class="hamburger"></div>
+				<div class="hamburger"></div>
+			</div>
+			
+
+		</div>
+		
+		<div>
 			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
+						wp_nav_menu(
+							array(
+								'theme_location' => 'menu-1',
+								'menu_id'        => 'services',
+							)
+						);
 			?>
-		</nav><!-- #site-navigation -->
+		</div>
+
+
+	</section>
+		
 	</header><!-- #masthead -->

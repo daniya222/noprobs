@@ -191,6 +191,44 @@ $fourth = get_field('fourth_section');
 
     </div>
     <div class="row">
+      <?php 
+      $args = array(
+          'post_type' => 'post', 
+          'posts_per_page' => -1, 
+      );
+
+      $query = new WP_Query($args);
+
+      if ($query->have_posts()) {
+          $count = 0; 
+          while ($query->have_posts()) {
+              $query->the_post();
+              $count++;
+            
+              $thumbnail = get_the_post_thumbnail_url();
+              $title = get_the_title();
+              $excerpt = get_the_excerpt();
+              $article_number = sprintf('%02d', $count);
+              if (strlen($excerpt) > 200) {
+                  $excerpt = substr($excerpt, 0, 200) . '...';
+              }
+
+          
+              echo '<div class="col-md-4 col-post position-relative" data-aos="fade-left"> ';
+              if ($thumbnail) {
+                  echo '<div class="post-thumbnail"> <div class="image-cover full-size center-bottom">
+                    <img src='.esc_url($thumbnail).'>
+                </div> </div>';
+              }
+              echo '<a href="'.get_the_permalink().'"><div class="text title"><div class="article-num">'.$article_number.'</div><div><h2 class="post-title">' . $title . '</h2>';
+              echo '<div class="post-excerpt">' . $excerpt . '</div></div></div></a>';
+              echo '</div>';
+          }
+          wp_reset_postdata(); 
+            } else {
+            }
+      
+      ?>
 
     </div>
   </div>

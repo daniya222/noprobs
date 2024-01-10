@@ -1,40 +1,49 @@
 <?php
-/**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package No_Probs
- */
 
 get_header();
 ?>
+<?php
+$banner = get_field('hero');
+$bannerUrl = $banner['url'];
+?>
+<section class="position-relative banner-section">
+  <div class="banner-holder">
+        <div class="image-cover full-size center-bottom">
+            <img src="<?php echo $bannerUrl;?>">
+        </div>    
+  </div>
+  <div class="banner-continer-holder position-relative">
+        <div class="container banner-text h-100">
+            <div class="row h-100 align-items-center">
+						<div class="col-md-8">
+								<div><h1 class="fourth-title" style="color:var(--white)"><?php the_title() ?></h1></div>
 
-	<main id="primary" class="site-main">
+								
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+								
 
-			get_template_part( 'template-parts/content', get_post_type() );
+						</div>
+						
+              
+            </div>      
+        </div> 
+    </div>
+    
+</section>
+<section class="section-post">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10">
+				<div class="font-author" style="">By: <?php echo the_field('author'); ?></div>
+				<div class="fourth-text"><?php the_content() ?></div>
+			</div>
 
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'no-probs' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'no-probs' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
+		</div>
+	</div>
+</section>
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
 
-		endwhile; // End of the loop.
-		?>
-
-	</main><!-- #main -->
 
 <?php
-get_sidebar();
+
 get_footer();

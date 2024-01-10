@@ -15,7 +15,7 @@
 		<section class="section-footer-menu">
 			<div class="container">
 				<div class="row justify-content-between">
-					<div class="col-md-3">
+					<div class="col-md-3" data-aos="fade-left">
 						<div class="logo-footer">
 							<img height="42" src="<?php echo get_field('logo', 'option')['url']?>" class="">
 						
@@ -33,7 +33,7 @@
 						</div>
 						
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6" data-aos="fade-left">
 						<div class="row service-row">
 							<div class="col-md-6">
 								<span style="font-weight:600">Services</span>
